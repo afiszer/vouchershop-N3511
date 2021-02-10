@@ -1,7 +1,7 @@
-package pl.jkanclerz.vouchershop.sales;
+package pl.fiszer.vouchershop.sales;
 
 import org.junit.Test;
-import pl.jkanclerz.vouchershop.catalog.Product;
+import pl.fiszer.vouchershop.catalog.Product;
 
 import java.util.UUID;
 

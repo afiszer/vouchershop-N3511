@@ -17,7 +17,7 @@ import static org.assertj.core.api.Assertions.*;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class ProductCatalogHttpTest {
+public class git ProductCatalogHttpTest {
     @LocalServerPort
     int port;
 

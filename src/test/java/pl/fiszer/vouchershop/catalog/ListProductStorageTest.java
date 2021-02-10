@@ -1,9 +1,8 @@
 package pl.fiszer.vouchershop.catalog;
+import pl.fiszer.vouchershop.catalog.exceptions.NoSuchProductException;
 
 import org.junit.Assert;
 import org.junit.Test;
-import pl.fiszer.vouchershop.catalog.exceptions.NoSuchProductException;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;

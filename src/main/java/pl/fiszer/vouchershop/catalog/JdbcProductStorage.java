@@ -1,7 +1,6 @@
 package pl.fiszer.vouchershop.catalog;
 
 import org.springframework.jdbc.core.JdbcTemplate;
-
 import java.util.List;
 import java.util.Optional;
 

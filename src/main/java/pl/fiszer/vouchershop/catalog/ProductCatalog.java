@@ -1,6 +1,4 @@
 package pl.fiszer.vouchershop.catalog;
-
-
 import pl.fiszer.vouchershop.catalog.exceptions.NoSuchProductException;
 
 import java.math.BigDecimal;

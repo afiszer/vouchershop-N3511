@@ -8,7 +8,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.test.context.junit4.SpringRunner;
-
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
@@ -20,7 +19,7 @@ import static org.assertj.core.api.Assertions.*;
 @RunWith(SpringRunner.class)
 public class JdbcPlaygroundTest {
 
-    public static final String PRODUCT_ID = "a9820b50-6dd1-4c2c-90be-0795a9e973b1";
+    public static final String PRODUCT_ID = "2a37fd5b-4cdc-4aca-b902-600ce7d423b4";
 
     @Autowired
     JdbcTemplate jdbcTemplate;
@@ -68,8 +67,8 @@ public class JdbcPlaygroundTest {
     @Test
     public void itAllowsToLoadProduct() {
         jdbcTemplate.execute("INSERT INTO `products_catalog__products` (`id`, `description`, `picture`, `price`) values " +
-                "('a9820b50-6dd1-4c2c-90be-0795a9e973b1', 'p1 description', 'p1 picture', 10.10)," +
-                "('a9820b50-6dd1-4c2c-90be-0795a9e973c1', 'p2 description', 'p2 picture', 20.20)" +
+                "('2a37fd5b-4cdc-4aca-b902-600ce7d423b4', 'p1 description', 'p1 picture', 10.10)," +
+                "('2a37fd5b-4cdc-4aca-b902-600ce7d423c4', 'p2 description', 'p2 picture', 20.20)" +
                 "; ");
 
         var query = "Select * from `products_catalog__products` where id = ?";
@@ -86,8 +85,8 @@ public class JdbcPlaygroundTest {
     @Test
     public void itAllowToLoadsAllProducts() {
         jdbcTemplate.execute("INSERT INTO `products_catalog__products` (`id`, `description`, `picture`, `price`) values " +
-                "('a9820b50-6dd1-4c2c-90be-0795a9e973b1', 'p1 description', 'p1 picture', 10.10)," +
-                "('a9820b50-6dd1-4c2c-90be-0795a9e973c1', 'p2 description', 'p2 picture', 20.20)" +
+                "('2a37fd5b-4cdc-4aca-b902-600ce7d423b4', 'p1 description', 'p1 picture', 10.10)," +
+                "('2a37fd5b-4cdc-4aca-b902-600ce7d423c4', 'p2 description', 'p2 picture', 20.20)" +
                 "; ");
 
         var query = "Select * from `products_catalog__products`";

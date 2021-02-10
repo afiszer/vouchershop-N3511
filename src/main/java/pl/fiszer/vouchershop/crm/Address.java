@@ -3,7 +3,6 @@ package pl.fiszer.vouchershop.crm;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 import javax.persistence.Embeddable;
 import javax.validation.constraints.NotNull;
 

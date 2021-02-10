@@ -3,6 +3,7 @@ package pl.fiszer.vouchershop.crm;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
@@ -25,7 +26,4 @@ public class Client {
     @NotNull
     @Valid
     private Address address;
-
-    public Client() {
-    }
 }

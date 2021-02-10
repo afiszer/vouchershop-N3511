@@ -1,4 +1,4 @@
-package pl.jkanclerz.vouchershop.catalog;
+package pl.fiszer.vouchershop.catalog;
 
 import java.util.UUID;
 
